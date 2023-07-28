@@ -22,12 +22,6 @@ const SearchManufacturer = ({
             .includes(query.toLowerCase().replace(/\s+/g, ""))
         );
 
-  useEffect(() => {
-    console.log("====================================");
-    console.log(manufacturer);
-    console.log("====================================");
-  }, [manufacturer]);
-
   return (
     <div className="search-manufacturer">
       <Combobox value={manufacturer} onChange={setManuFacturer}>

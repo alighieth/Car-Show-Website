@@ -72,3 +72,8 @@ export interface CarDetailsProps {
   closeModal: () => void;
   car: CarProps;
 }
+
+export interface FetchFilterProps {
+  manufacturer: string;
+  model: string;
+}
